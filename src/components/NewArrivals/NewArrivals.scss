@@ -1,0 +1,31 @@
+.arrivals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem;
+    height: 90vh;
+
+    &__header{
+        color:#171717;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    &__collections{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 3.125rem;
+        gap: 1.875rem;
+        margin-right: 4rem;
+        margin-left: 5rem;
+    }
+}
+
+.item{
+    width: calc(100% - 2rem);
+    background-color: #fff; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 1rem; 
+    text-align: center;
+}
