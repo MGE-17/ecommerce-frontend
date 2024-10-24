@@ -1,0 +1,22 @@
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem;
+    height: 90vh;
+
+    &__bikes{
+        color:#171717;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    &__item{
+        margin-top: 3.125rem;
+        display: flex;
+        gap: 1.875rem;
+        justify-content: center;
+
+        
+    }
+}
