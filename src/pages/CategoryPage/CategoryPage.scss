@@ -1,0 +1,33 @@
+.category{
+
+    &__banner{
+        display: block;
+        margin: 1.875rem auto;
+        width: 82%;
+
+    }
+
+    &__index-sort{
+        display: flex;
+        margin: 0 10.625rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__sort{
+        padding: .625rem 1.25rem;
+        border-radius: 2.5rem;
+        border: .0625rem solid #888;
+    }
+
+    &__showing{
+        font-weight: 600;
+    }
+
+    &__products{
+        margin: 1.25rem 10.625rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 5rem;
+    }
+}

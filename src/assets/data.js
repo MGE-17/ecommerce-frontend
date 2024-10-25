@@ -11,7 +11,8 @@ let data_product = [
     new_price:2000,
     old_price:3000,
   },
-  {id:2,
+  {
+    id:2,
     name:"Rockhopper 29",
     image:p2_img,
     new_price:700,

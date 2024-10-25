@@ -8,6 +8,8 @@ import Product from "./pages/Product/Product";
 import Cart from "./pages/Cart/Cart";
 import LoginSignup from "./pages/LoginSignup/LoginSignup";
 import Footer from "./components/Footer/Footer";
+import men_banner from "./assets/banner_mens.png";
+import woman_banner from "./assets/banner_women.png";
 
 function App() {
   return (
@@ -16,8 +18,14 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Shop />} />
-          <Route path="/bikes" element={<CategoryPage category="bikes" />} />
-          <Route path="/parts" element={<CategoryPage category="parts" />} />
+          <Route
+            path="/bikes"
+            element={<CategoryPage banner={men_banner} category="bikes" />}
+          />
+          <Route
+            path="/parts"
+            element={<CategoryPage banner={woman_banner} category="parts" />}
+          />
           <Route
             path="/apparel"
             element={<CategoryPage category="apparel" />}
