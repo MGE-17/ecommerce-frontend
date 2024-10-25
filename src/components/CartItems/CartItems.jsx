@@ -55,18 +55,20 @@ function CartItems() {
       <div className="cart-items__down">
         <div className="cart-items__total">
           <h1 className="cart-items__total-header">Cart Totals</h1>
-        </div>
-        <div className="cart-items__total-item">
-          <p>Subtotal</p>
-          <p>${0}</p>
-        </div>
-        <hr />
-        <div className="cart-items__total-item">
-          <h3>Total</h3>
-          <h3>${0}</h3>
+          <div>
+            <div className="cart-items__total-item">
+              <p>Subtotal</p>
+              <p>${0}</p>
+            </div>
+            <hr />
+            <div className="cart-items__total-item">
+              <h3>Total</h3>
+              <h3>${0}</h3>
+            </div>
+          </div>
+          <button className="cart-items__btn">Proceed to checkout</button>
         </div>
       </div>
-      <button className="cart-items__btn">Proceed to checkout</button>
     </div>
   );
 }
