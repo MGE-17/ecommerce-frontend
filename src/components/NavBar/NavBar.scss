@@ -6,7 +6,7 @@
     justify-content: space-around;
     padding: 1rem;
     box-shadow: 0 1px .1875rem -0.125rem black;
-    width: 100%;
+    width: auto;
 
     &__logo{
         display: flex;
@@ -15,8 +15,8 @@
     }
 
     &__image{
-        width: 10rem;
-        height: 6rem;
+        width: 25rem;
+        height: 8rem;
     }
 
     &__logo p {

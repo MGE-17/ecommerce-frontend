@@ -8,21 +8,21 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero__left">
-        <h2 className="hero__new-arrivals">New Arrivals </h2>
+        <h2 className="hero__new-arrivals"> Find Your Next Adventure</h2>
         <div>
+          <img
+            className="hero__hand-icon--image"
+            src={hand_icon}
+            alt="handIcon"
+          />
           <div className="hero__hand-icon">
-            <p className="hero__description">new</p>
-            <img
-              className="hero__hand-icon--image"
-              src={hand_icon}
-              alt="handIcon"
-            />
+            <p className="hero__description">Pre-Owned</p>
           </div>
-          <p className="hero__description">Collection</p>
-          <p className="hero__description">For everyone</p>
+          <p className="hero__description">Well-loved and ready to Roll</p>
+          <p className="hero__description"></p>
         </div>
         <div className="hero__latests-btn">
-          <div>Latests Collection</div>
+          <div>Latests arrivals</div>
           <img src={arrow_icon} alt="arrowIcon" />
         </div>
       </div>

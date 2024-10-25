@@ -11,7 +11,6 @@ function NavBar() {
     <div className="navbar">
       <div className="navbar__logo">
         <img className="navbar__image" src={logo} alt="logo" />
-        <p>BS</p>
       </div>
       <ul className="navbar__menu">
         <li
