@@ -30,8 +30,7 @@ function App() {
             path="/apparel"
             element={<CategoryPage category="apparel" />}
           />
-          <Route path="/product" element={<Product />} />
-          <Route path=":productId" element={<Product />} />
+          <Route path="/product/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
