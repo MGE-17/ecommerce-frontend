@@ -1,10 +1,13 @@
 import React from "react";
 import "./Item.scss";
+import { Link } from "react-router-dom";
 
 function Item(props) {
   return (
     <div className="item">
-      <img className="item__image" src={props.image} alt="" />
+      <Link to={`/product/${props.id}`}>
+        <img className="item__image" src={props.image} alt="" />
+      </Link>
       <p className="item__name">{props.name}</p>
       <div className="item__prices">
         <div className="item__price-new">{props.new_price}</div>
