@@ -12,6 +12,7 @@ function CartItems() {
         <p>Products</p>
         <p>Title</p>
         <p>Price</p>
+        <p>Quantity</p>
         <p>Total</p>
         <p>Remove</p>
       </div>
@@ -49,8 +50,23 @@ function CartItems() {
             </div>
           );
         }
-        return null; // Ensure map always returns something
+        return null;
       })}
+      <div className="cart-items__down">
+        <div className="cart-items__total">
+          <h1 className="cart-items__total-header">Cart Totals</h1>
+        </div>
+        <div className="cart-items__total-item">
+          <p>Subtotal</p>
+          <p>${0}</p>
+        </div>
+        <hr />
+        <div className="cart-items__total-item">
+          <h3>Total</h3>
+          <h3>${0}</h3>
+        </div>
+      </div>
+      <button className="cart-items__btn">Proceed to checkout</button>
     </div>
   );
 }
