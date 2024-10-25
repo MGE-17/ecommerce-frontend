@@ -1,0 +1,43 @@
+.cart-items{
+    margin:6.25rem 10.625rem;
+
+    &__ hr {
+        height: .1875rem;
+        background-color: #e2e2e2;
+        border: 0;
+    }
+
+    &__format-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 4.6875rem;
+        padding: 1.25rem 0;
+        color:#454545;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    &__format{
+        font-size: 1.0625rem;
+        font-weight: 500;
+    }
+
+    &__product-icon{
+        height: 3.875rem;
+
+    }
+
+    &__remove-icon{
+        width: .9375rem;
+        margin: 0 3.125rem;
+        cursor: pointer;
+    }
+
+    &__quantity{
+        width: 4rem;
+        height: 3.125rem;
+        background-color: white;
+        border: .125rem solid #ebebeb;
+    }
+}
