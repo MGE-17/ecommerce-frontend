@@ -45,7 +45,7 @@ function NavBar() {
             menu === "apparel" ? "navbar__menu-active" : ""
           }`}
         >
-          <Link to="/apparel">apparel</Link>
+          <Link to="/apparel">Accessories</Link>
         </li>
       </ul>
       <div className="navbar__login-cart">

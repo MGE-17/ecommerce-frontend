@@ -29,9 +29,9 @@
         height: 4.5rem;
         width: 100%;
         padding-left: 1.25rem;
-        border: .0625rem solid #c9c9c9;
+        border: .0625rem solid $slate;
         outline: none;
-        color: #5c5c5c;
+        color:$slate;
         font-size: 1.125rem;
 
     }
@@ -40,12 +40,13 @@
         width: 36.25rem;
         height: 4.5rem;
         color: white;
-        background-color: #ff4141;
+        background-color: $bikeSwap-indigo;
         margin-top: 1.875rem;
         border: none;
         font-size: 1.5rem;
         font-weight: 500;
         cursor: pointer;
+        border-radius: 5rem;
 
     }
 
@@ -56,9 +57,9 @@
         font-size: 1.125rem;
 
         & span{
-            color: #ff4141;
+            color: $bikeSwap-indigo;
             font-weight: 600;
-            
+
         }
     }
 }

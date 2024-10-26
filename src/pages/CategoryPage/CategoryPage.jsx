@@ -9,10 +9,9 @@ function CategoryPage(props) {
 
   return (
     <div className="category">
-      <img className="categroy__banner" src={props.banner} alt="" />
       <div className="category__index-sort">
         <p className="category__showing">
-          <span className="category__showing">Showing1-12</span> out of{" "}
+          <span className="category__showing">Showing 1-12</span> out of{" "}
           {all_product.length}
         </p>
         <div className="category__sort">

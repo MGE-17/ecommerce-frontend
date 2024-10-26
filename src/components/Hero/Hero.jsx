@@ -22,7 +22,6 @@ function Hero() {
           <p className="hero__description"></p>
         </div>
         <div className="hero__latests-btn">
-          <div>Latests arrivals</div>
           <img src={arrow_icon} alt="arrowIcon" />
         </div>
       </div>

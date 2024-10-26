@@ -12,9 +12,6 @@ function ProductDisplay(props) {
       <div className="product-display__left">
         <div className="product-display__img-list">
           <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
         </div>
         <div className="product-display__image">
           <img

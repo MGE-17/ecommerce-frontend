@@ -30,7 +30,7 @@ function LoginSignup() {
         <div className="login-signup__agree">
           <input type="checkbox" name="" id="" />
           <p className="login-signup__login">
-            By continuing, i agree to the terms of use & privacy policy.
+            By continuing, I agree to the terms of use & privacy policy.
           </p>
         </div>
       </div>
