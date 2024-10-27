@@ -1,5 +1,5 @@
-import React, { createContext, useState } from "react";
-import all_product from "../assets/all_product";
+import React, { createContext, useEffect, useState } from "react";
+//import all_product from "../assets/all_product";
 
 export const ShopContext = createContext(null);
 
@@ -12,7 +12,22 @@ const getDefaultCart = () => {
 };
 
 const ShopContextProvider = (props) => {
+  const [products, setProducts] = useState([]);
   const [cartItem, setCartItems] = useState(getDefaultCart());
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:8585/products");
+        const data = await response.json();
+        setProducts(data);
+        setCartItems(getDefaultCart(data));
+      } catch (error) {
+        console.error("Filed to fetch products:", error);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
