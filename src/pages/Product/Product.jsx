@@ -5,14 +5,24 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import ProductDisplay from "../../components/ProductDisplay/ProductDisplay";
 
 function Product() {
-  const { all_product } = useContext(ShopContext);
+  const { products } = useContext(ShopContext);
   const { productId } = useParams();
-  const product = all_product.find((e) => e.id === Number(productId));
+
+  if (!products || products.length === 0) {
+    return <div>Loading...</div>;
+  }
+  const product = products.find((e) => e.id === Number(productId));
 
   return (
     <div className="product">
-      <Breadcrumb product={product} />
-      <ProductDisplay product={product} />
+      {product ? (
+        <>
+          <Breadcrumb product={product} />
+          <ProductDisplay product={product} />
+        </>
+      ) : (
+        <div>Product not found </div>
+      )}
     </div>
   );
 }

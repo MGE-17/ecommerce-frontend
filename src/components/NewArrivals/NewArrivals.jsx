@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./NewArrivals.scss";
-import new_collection from "../../assets/new_collections";
 import Item from "../Item/Item";
 
 function NewArrivals() {
+  const [newArrivals, setNewArrivals] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:8585/products");
+        const data = await response.json();
+        const idsToShow = [12, 14, 8, 15, 2, 17, 28, 10];
+
+        // Filter the fetched data to include only the specified IDs
+        const filteredData = data.filter((item) => idsToShow.includes(item.id));
+
+        setNewArrivals(filteredData);
+      } catch (error) {
+        console.error("Failed to fetch new collections:", error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
   return (
     <div className="arrivals">
       <h1 className="arrivals__header">NEW ARRIVALS</h1>
       <div className="arrivals__collections">
-        {new_collection.map((item, i) => {
+        {newArrivals.map((item, i) => {
           return (
             <Item
               key={i}

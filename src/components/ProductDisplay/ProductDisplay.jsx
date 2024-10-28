@@ -4,8 +4,7 @@ import star_icon from "../../assets/star_icon.png";
 import star_dull_icon from "../../assets/star_dull_icon.png";
 import { ShopContext } from "../../context/ShopContext";
 
-function ProductDisplay(props) {
-  const { product } = props;
+function ProductDisplay({ product }) {
   const { addToCart } = useContext(ShopContext);
   return (
     <div className="product-display">
