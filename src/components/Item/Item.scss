@@ -1,0 +1,43 @@
+.item{
+    width: calc(20% - 1rem); // Adjust width to fit 4 items in a row with some gap
+    background-color: #fff; // White background for card
+    border-radius: 0.5rem; // Rounded corners
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    padding: 1rem; // Padding inside the card
+    text-align: center; // Center text alignment
+
+    &__image {
+        width: 100%; // Make image responsive
+        height: auto; // Maintain aspect ratio
+        border-radius: 0.25rem; // Rounded corners for image
+    }
+
+    &__name{
+        margin: .375rem 0;
+        font-size: 1.125rem;
+    }
+
+    &__prices{
+        display: flex;
+        justify-content: center; 
+        gap: 1.25rem;
+    }
+    &__price-new{
+        color: #374151;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+
+    &__price-old{
+        color: #8c8c8c;
+        font-size: 1.125rem;
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+

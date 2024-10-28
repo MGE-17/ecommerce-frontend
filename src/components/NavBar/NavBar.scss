@@ -1,14 +1,22 @@
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/variables.scss" as *;
+
 .navbar{
     display: flex;
     justify-content: space-around;
     padding: 1rem;
     box-shadow: 0 1px .1875rem -0.125rem black;
-    width: 100%;
+    width: auto;
 
     &__logo{
         display: flex;
         align-items: center;
         gap: .625rem;
+    }
+
+    &__image{
+        width: 25rem;
+        height: 8rem;
     }
 
     &__logo p {

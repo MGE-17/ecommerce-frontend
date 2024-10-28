@@ -1,0 +1,35 @@
+@use "./variables.scss" as *;
+
+@mixin extra-small-mobile {
+    @media (max-width: 25rem) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: 48rem) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: 80rem) {
+      @content;
+    }
+  }
+  
+  @mixin paragraph-style(
+    $font-size,
+    $line-height,
+    $font-size-tablet,
+    $line-height-tablet
+  ) {
+    font-size: $font-size;
+    line-height: $line-height;
+  
+    @include tablet {
+      font-size: $font-size-tablet;
+      line-height: $line-height-tablet;
+    }
+  }
+  

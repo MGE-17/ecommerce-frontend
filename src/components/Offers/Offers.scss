@@ -1,0 +1,55 @@
+@use "../../styles/partials/variables" as *;
+.offers{
+    width: 65%;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    padding: 0 8.75rem;
+    margin-bottom: 9.375rem;
+    background: linear-gradient(180deg, #a9a9a9 0%, #e1ffea22 60%);
+
+    &__left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__exclusive{
+        color: $bikeSwap-black;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    &__best-seller{
+        color: $bikeSwap-black;
+        font-size: 1.375rem;
+        font-weight: 600;
+    }
+
+    &__checkbtn{
+        width: 17.625rem;
+        height: 4.375rem;
+        border-radius: 2.1875rem;
+        background-color: $bikeSwap-indigo;
+        border: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 1.875rem;
+        cursor: pointer;
+    }
+
+    &__right{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 3.125rem;
+    }
+
+    &__image{
+        width: 100%;
+    }
+
+}

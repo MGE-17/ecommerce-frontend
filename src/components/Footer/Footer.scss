@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer{
+    background-color: $light-grey;
+    padding: $spacing-lg $spacing-md ;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    padding-top: 5rem;
+    margin-top: 2rem;
+
+    
+    &__instock{
+        color: $slate;
+
+        @include paragraph-style(
+        $p-small-font-size, 
+        $p-small-line-height, 
+        $p-small-font-size-tablet, 
+        $p-small-line-height-tablet
+        ) 
+
+        
+    }
+}
